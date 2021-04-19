@@ -159,6 +159,7 @@ header {
   z-index: 10;
 
   background-color: white;
+  border-bottom: 1px solid var(--blue);
 }
 
 nav li {
@@ -228,6 +229,10 @@ main {
 
 .icon {
   width: 70px;
+}
+
+.icon-nav {
+  width: 30px;
 }
 
 .card {
