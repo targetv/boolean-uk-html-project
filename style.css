@@ -17,6 +17,10 @@ html {
   --yellow: #ffc100;
 }
 
+.active {
+  background-color: var(--yellow) !important;
+}
+
 /* Media */
 
 /* @media screen and (max-width: 900px) {
