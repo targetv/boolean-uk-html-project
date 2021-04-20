@@ -49,6 +49,15 @@ html {
     margin-left: 0px !important;
   }
 
+  .image-med {
+    display: none !important;
+  }
+
+  #about-us {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+
   nav {
     width: 100%;
     padding-left: 10px;
@@ -234,8 +243,8 @@ header {
 }
 
 .logo {
-  max-width: 144px;
-  max-height: 70px;
+  width: 144px;
+  height: 70px;
 }
 
 .underline {
