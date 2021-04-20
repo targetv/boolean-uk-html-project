@@ -166,6 +166,14 @@ span {
   margin-top: 10px;
 }
 
+.margin-40-l {
+  margin-left: 40px;
+}
+
+.margin-10-l {
+  margin-left: 10px;
+}
+
 /* Padding */
 
 .padding-60 {
@@ -194,10 +202,6 @@ header {
 
   background-color: white;
   border-bottom: 1px solid var(--blue);
-}
-
-nav li {
-  margin-left: 40px;
 }
 
 .logo {
