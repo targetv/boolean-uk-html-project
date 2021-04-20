@@ -75,6 +75,7 @@ html {
 
   .back-to-top {
     left: 90% !important;
+    display: none !important;
   }
 }
 
@@ -233,8 +234,8 @@ header {
 }
 
 .logo {
-  width: 144px;
-  height: 70px;
+  max-width: 144px;
+  max-height: 70px;
 }
 
 .underline {
