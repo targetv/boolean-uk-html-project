@@ -84,6 +84,13 @@ li {
   color: white;
 }
 
+.color-red {
+  color: red;
+}
+.tc {
+  font-size: 0.7rem;
+}
+
 p {
   color: var(--blue);
 }
