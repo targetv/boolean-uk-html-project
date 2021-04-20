@@ -19,11 +19,30 @@ function showSlides() {
   setTimeout(showSlides, 10000); // Change image every 2 seconds
 }
 
-function myFunction() {
-  alert("Terms and Conditions");
+function modalOn() {
+  let bodyElem = document.querySelector("body");
+
+  bodyElem.classList.add("modal-on");
+}
+
+function modalOff() {
+  let bodyElem = document.querySelector("body");
+
+  bodyElem.classList.remove("modal-on");
 }
 
 function run() {
+  let registerButtons = document.querySelectorAll(".tc");
+  let dismissButton = document.querySelector(".dismiss");
+
+  for (const registerButton of registerButtons) {
+    registerButton.addEventListener("click", modalOn);
+    registerButton.addEventListener("touchstart", modalOn);
+  }
+
+  dismissButton.addEventListener("click", modalOff);
+  dismissButton.addEventListener("touchstart", modalOff);
+
   showSlides();
 }
 
