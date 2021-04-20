@@ -8,8 +8,13 @@
 
 body {
   display: grid;
-  grid-template-rows: 70px 1fr;
+  grid-template:
+    "header" 70px
+    "main" 1fr
+    "footer" 30px/
+    1fr;
   width: 100vw;
+  position: relative;
 }
 
 html {
@@ -25,7 +30,11 @@ html {
 
 @media screen and (max-width: 700px) {
   body {
-    grid-template-rows: 300px 1fr;
+    grid-template:
+      "header" 300px
+      "main" 1fr
+      "footer" 30px/
+      1fr;
   }
 
   nav li {
@@ -181,6 +190,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
+  grid-area: header;
 
   background-color: white;
   border-bottom: 1px solid var(--blue);
@@ -231,6 +241,7 @@ video {
 main {
   display: grid;
   grid-template-rows: auto;
+  grid-area: main;
 }
 
 .button {
@@ -333,4 +344,18 @@ main {
 
 .overlay-maps p {
   width: 25ch;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.back-to-top {
+  position: sticky;
+  bottom: 10%;
+  left: 97%;
+  background-color: var(--yellow);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
