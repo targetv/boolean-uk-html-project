@@ -55,6 +55,9 @@ html {
   .h1-large {
     font-size: 2rem !important;
   }
+  .back-to-top {
+    left: 90% !important;
+  }
 }
 
 /* Global Classes */
@@ -209,8 +212,13 @@ header {
   height: 50px;
 }
 
+.underline {
+  border-bottom: 1px solid transparent;
+}
+
 .underline:hover {
   border-bottom: 1px solid var(--blue);
+  transition: ease-in 1s;
 }
 
 /* Main */
@@ -355,8 +363,8 @@ footer {
 }
 
 .back-to-top {
-  position: sticky;
-  bottom: 10%;
+  position: fixed;
+  bottom: 5%;
   left: 97%;
   background-color: var(--yellow);
   width: 50px;
