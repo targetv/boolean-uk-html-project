@@ -159,10 +159,11 @@ body.modal-on .modal {
   background: white;
   opacity: 0.95;
   height: 5rem;
-  width: 50%;
-  height: 50%;
   font-size: 20px;
   display: grid;
+  height: 70vh;
+  width: 70vw;
+  grid-template-rows: repeat(3, 1fr);
   place-items: center;
   padding: 15px;
   border-radius: 10px;
@@ -176,8 +177,8 @@ body.modal-on .modal {
   border-radius: 50%;
   color: white;
   position: absolute;
-  top: 23%;
-  right: 75%;
+  top: 10%;
+  right: 85%;
 }
 
 .modal > div input {
@@ -197,6 +198,10 @@ body.modal-on .modal {
 .modal > div form {
   display: grid;
   place-content: center;
+}
+
+.modal > div p {
+  font-size: 1rem;
 }
 
 /* Headings */
