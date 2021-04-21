@@ -177,8 +177,8 @@ body.modal-on .modal {
   border-radius: 50%;
   color: white;
   position: absolute;
-  top: 10%;
-  right: 85%;
+  top: 7%;
+  right: 86%;
 }
 
 .modal > div input {
